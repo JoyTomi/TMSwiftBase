@@ -1,15 +1,14 @@
-Pod::Spec.new do |s|
-  s.name         = "TMSwiftBase"
-  s.version      = "0.0.1"
-  s.summary      = "Base Extension & Utils By Swift"
-  s.description  = <<-DESC
-			iOS 方便开发 一些基础类扩展 以及一些基础Utils 欢迎一起丰富
-                   DESC
-
-  s.homepage     = "https://github.com/JoyTomi/TMSwiftBase"
-  s.license      = { :type => "MIT", :file => "LICENSE" }
-  s.author             = { "JoyTomi" => "492774245@qq.com" }
-  s.platform     = :ios, "10.0"
-  s.source       = { :git => "https://github.com/JoyTomi/TMSwiftBase.git", :tag => "0.0.1" }
-  s.source_files  = "Base/**/*.swift"
+ Pod::Spec.new do |spec|
+    spec.name             = 'TMSwiftBase'
+    spec.version          = "0.0.1"
+    spec.license          = { :type => 'MIT' }
+    spec.homepage         = "https://github.com/JoyTomi/TMSwiftBase"
+    spec.authors          = { "JoyTomi" => "492774245@qq.com" }
+    spec.summary          = "Base Extension & Utils By Swift"
+    spec.source           = {:git => 'https://github.com/JoyTomi/TMSwiftBase.git', :tag => "0.0.1"}
+    spec.platform         = :ios, '13.0'
+    spec.swift_version    = '5.0'
+    spec.ios.deployment_target = '13.0'
+    spec.framework        = 'UIKit'
+    spec.source_files  = "Base/**/*.swift"
 end
