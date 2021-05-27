@@ -13,7 +13,7 @@ import UIKit
 public class AppUtils {
     static public let infoDictionary = Bundle.main.infoDictionary
     //App 名称
-    static public let appDisplayName: String = Bundle.main.infoDictionary!["CFBundleDisplayName"] as! String
+    static public let appDisplayName: String = Bundle.main.infoDictionary!["CFBundleName"] as! String
     // Bundle Identifier
     static public let bundleIdentifier:String = Bundle.main.bundleIdentifier!
     // App 版本号
